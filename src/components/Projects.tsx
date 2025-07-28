@@ -32,19 +32,19 @@ const Projects = () => {
     {
       title: "AI Resume Analyzer using RoBERTa",
       description:
-        "Web-based resume screening tool using RoBERTa to match resumes with job descriptions. Extracts entities with Transformers, computes similarity, and highlights skill gaps. UI built with Tailwind CSS and Flask.",
+        "Web-based tool for matching resumes with job descriptions using RoBERTa. Extracts entities from resumes, computes semantic similarity, and provides skill gap analysis with a responsive UI using Flask + Tailwind CSS.",
       technologies: [
         "Python",
         "Transformers",
-        "NLP",
         "Flask",
         "Tailwind CSS",
         "PyMuPDF",
+        "NLP",
       ],
       category: "AI",
       image:
-        "https://images.pexels.com/photos/3184328/pexels-photo-3184328.jpeg?auto=compress&cs=tinysrgb&w=600",
-      github: "https://github.com/souvikkkk/AI_Resume-Analyse",
+        "https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg?auto=compress&cs=tinysrgb&w=600",
+      github: "https://github.com/souvikkkk/ai-resume-analyzer",
     },
     {
       title: "Hotel Management System",
@@ -133,7 +133,7 @@ const Projects = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.8 }}
-        className="text-center mb-16 pt-28 relative z-10 px-4"
+        className="text-center mb-10 pt-20 relative z-10 px-4"
       >
         <h2
           id="projects"
@@ -149,7 +149,7 @@ const Projects = () => {
         initial={{ opacity: 0, y: 30 }}
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.8, delay: 0.2 }}
-        className="flex flex-wrap justify-center gap-4 mb-12 relative z-10 px-4"
+        className="flex flex-wrap justify-center gap-4 mb-8 relative z-10 px-4"
       >
         {filters.map((filter) => (
           <motion.button
@@ -157,7 +157,7 @@ const Projects = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={() => setActiveFilter(filter)}
-            className={`flex items-center space-x-2 px-6 py-3 rounded-full font-medium transition-all duration-300 ${
+            className={`flex items-center space-x-2 px-6 py-2 text-sm rounded-full font-medium transition-all duration-300 ${
               activeFilter === filter
                 ? "bg-primary-500 text-dark-950"
                 : "bg-white/5 text-gray-300 border border-white/10 hover:border-white/30"
@@ -172,7 +172,7 @@ const Projects = () => {
       {/* Projects Grid */}
       <motion.div
         layout
-        className="grid grid-cols-1 md:grid-cols-2 gap-8 px-8 sm:px-16 lg:px-40 relative z-10"
+        className="grid grid-cols-1 sm:grid-cols-2 gap-6 px-6 sm:px-10 md:px-20 lg:px-32 xl:px-48 relative z-10"
       >
         {filteredProjects.map((project, index) => (
           <motion.div
