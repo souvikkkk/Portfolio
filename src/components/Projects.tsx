@@ -30,21 +30,21 @@ const Projects = () => {
       github: "https://github.com/souvikkkk/Parkinson-s-Disease-Prediction",
     },
     {
-      title: "BCG GenAI Financial Chatbot",
+      title: "AI Resume Analyzer using RoBERTa",
       description:
-        "AI-powered financial chatbot to analyze 10-K and 10-Q reports, extracting insights and trends for efficient financial analysis.",
+        "Web-based resume screening tool using RoBERTa to match resumes with job descriptions. Extracts entities with Transformers, computes similarity, and highlights skill gaps. UI built with Tailwind CSS and Flask.",
       technologies: [
         "Python",
+        "Transformers",
         "NLP",
-        "Pandas",
-        "Jupyter",
-        "Excel",
-        "Chatbot Development",
+        "Flask",
+        "Tailwind CSS",
+        "PyMuPDF",
       ],
       category: "AI",
       image:
-        "https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg?auto=compress&cs=tinysrgb&w=600",
-      github: "#",
+        "https://images.pexels.com/photos/3184328/pexels-photo-3184328.jpeg?auto=compress&cs=tinysrgb&w=600",
+      github: "https://github.com/souvikkkk/AI_Resume-Analyse",
     },
     {
       title: "Hotel Management System",
