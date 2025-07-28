@@ -13,7 +13,7 @@ const Certifications = () => {
     {
       title: "Diversion 2K24 AI Hackathon Participation",
       issuer: "Institute of Engineering & Management, Kolkata",
-      date: "February 2024",
+      date: "3 - 4 February 2024",
       platform: "Diversion 2K24",
       badge:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeJJmuG5S4uzyZFBmQtq-yL6gIbQn0PbxM5g&s",
@@ -24,13 +24,13 @@ const Certifications = () => {
       issuer: "Flipkart",
       date: "2024",
       platform: "Flipkart GRiD 6.0",
-      badge:"https://static.vecteezy.com/system/resources/previews/018/930/698/non_2x/facebook-logo-facebook-icon-transparent-free-png.png",
+      badge: "https://static.vecteezy.com/system/resources/previews/018/930/698/non_2x/facebook-logo-facebook-icon-transparent-free-png.png",
       link: "https://drive.google.com/file/d/1C3m2-jLiq1jF7v4gDRC74gIzcS94ex1I/view?usp=sharing",
     },
     {
       title: "GenAI Job Simulation",
       issuer: "Forage",
-      date: "December 2024",
+      date: "30 December 2024",
       platform: "Forage",
       badge: "https://cdn-assets.theforage.com/images/forage-schema-logo.png",
       link: "https://drive.google.com/file/d/1-7iQfFnxEc-ZQCvaj9cJPrFiImDxeBnX/view?usp=sharing",
@@ -40,9 +40,16 @@ const Certifications = () => {
       issuer: "Udemy · Instructor: Jonas Schmedtmann",
       date: "June 30, 2025",
       platform: "Udemy",
-      badge:
-        "https://media.licdn.com/dms/image/v2/D560BAQEf_NHzN2yVQg/company-logo_200_200/company-logo_200_200/0/1723593046388/udemy_logo?e=2147483647&v=beta&t=_tl_e0tunbg9SkCl3nXHQEaQu4FlCGi4UU2chO9yBRs",
+      badge: "https://media.licdn.com/dms/image/v2/D560BAQEf_NHzN2yVQg/company-logo_200_200/company-logo_200_200/0/1723593046388/udemy_logo?e=2147483647&v=beta&t=_tl_e0tunbg9SkCl3nXHQEaQu4FlCGi4UU2chO9yBRs",
       link: "https://drive.google.com/file/d/16sodJYfl0XX8MqvwVQMsrNS97MvgsADv/view?usp=sharing",
+    },
+    {
+      title: "Deloitte – Data Analytics Job Simulation",
+      issuer: "Forage",
+      date: "5 July, 2025",
+      platform: "Forage",
+      badge: "https://cdn-assets.theforage.com/images/forage-schema-logo.png",
+      link: "https://drive.google.com/file/d/1gbWO2s3g2wCVh4fyB8w8K4jsVOEZJZTo/view?usp=sharing"
     },
   ];
 
@@ -107,13 +114,13 @@ const Certifications = () => {
         className="text-center mb-16 pt-28 relative z-10 px-4"
       >
         <h2 className="text-4xl lg:text-5xl font-bold mb-4 text-white">
-          <span className="text-white">Certifications</span>
+          Certifications
         </h2>
         <div className="w-24 h-1 bg-primary-500 mx-auto rounded-full"></div>
       </motion.div>
 
       {/* Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 px-6 sm:px-16 lg:px-32 relative z-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 px-6 sm:px-16 lg:px-32 relative z-10">
         {certifications.map((cert, index) => (
           <motion.div
             key={cert.title}
@@ -121,9 +128,9 @@ const Certifications = () => {
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: index * 0.1 }}
             whileHover={{ y: -5, scale: 1.02 }}
-            className="group flex flex-col justify-between bg-white/5 backdrop-blur-md border border-white/10 rounded-xl p-6 hover:border-primary-500/50 transition-all duration-300"
+            className="group aspect-square flex flex-col justify-between bg-white/5 backdrop-blur-md border border-white/10 rounded-xl p-6 hover:border-primary-500/50 transition-all duration-300 overflow-hidden"
           >
-            <div>
+            <div className="overflow-y-auto">
               <div className="flex items-center justify-between mb-4">
                 <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-primary-500/30">
                   <img
