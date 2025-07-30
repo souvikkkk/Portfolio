@@ -156,7 +156,7 @@ const Hero = () => {
               className="flex flex-wrap gap-4 justify-center lg:justify-start"
             >
               <motion.a
-                href="https://drive.google.com/file/d/1mYRKnIJCqogR_tGTgZDxlFyYN1eEKZZW/view?usp=sharing"
+                href="https://drive.google.com/file/d/106X7hDXbRs4qQv3MihAFw7o_r_eD4loX/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
