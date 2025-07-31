@@ -51,6 +51,14 @@ const Certifications = () => {
       badge: "https://cdn-assets.theforage.com/images/forage-schema-logo.png",
       link: "https://drive.google.com/file/d/1gbWO2s3g2wCVh4fyB8w8K4jsVOEZJZTo/view?usp=sharing"
     },
+    {
+      title: "Deloitte - Technology Job Simulation",
+      issuer: "Forage",
+      date: "29 July, 2025",
+      platform: "Forage",
+      badge: "https://cdn-assets.theforage.com/images/forage-schema-logo.png",
+      link: "https://drive.google.com/file/d/1UjvK2Ubac5xxLKhdvT42R2jTAXmg6kO7/view?usp=sharing",
+    },
   ];
 
   const [stars, setStars] = useState([]);
